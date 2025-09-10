@@ -1,0 +1,18 @@
+# Workflow 이름
+name: HelloWorld
+
+# 실행 조건
+on: [push]
+
+# 수행하고자 하는 작업
+jobs:
+  # 작업 이름을 echo로 지정
+  echo:
+    # 실행 환경을 의미, ubuntu-latest는 우분투 최신 버전
+    runs-on: ubuntu-latest
+    # 실행 단계
+    steps:
+      # 단계별 이름
+    - name: hello
+      # 실행할 명령
+      run: echo "Hello, GitHub Actions!"
